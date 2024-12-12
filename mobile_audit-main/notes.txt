@@ -1,0 +1,31 @@
+Data Sources 
+
+Verizon Report (Monthly audit all fields)
+
+Mobi Report (downloaded from https://mdm.cornerstonehhh.com/ view is called monthly_audit)
+
+Workday Report (email from Sage)
+
+
+Data Sets
+1. Terminated employee in workday with 0 use in verizon, 0 check in mobi in the past month (immediate action)
+ 
+2. Active employee with 0 usage in verizon, 0 check in mobi in the past month (investigate tab)
+ 
+3. Terminated employee with usage in verizon for the past month and check in mobi previous month (investigate tab)
+
+4. If device name in MOBI doesnt match in Verizon user name, generate a file so we can check that out
+
+
+Workflow
+verizon_filter.py
+
+soti_filter.py
+
+workday_filter.py
+
+soti_verizon_filter.py
+
+actionable.py
+
+convert.py
